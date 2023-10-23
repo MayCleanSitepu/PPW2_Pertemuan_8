@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>CodePen - My Portfolio Project</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -38,7 +38,7 @@
         <!--===== HEADER =====-->
         <header class="l-header" id="header">
             <nav class="nav bd-container" id="navbar">
-                <a href="#" class="nav__logo">Meriam Selim</a>
+                <a href="#" class="nav__logo">Portfolio</a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"> <a href="#home" class="nav__link active--link">Home</a></li>
@@ -61,9 +61,23 @@
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
                         <span class="home__greeting">Hello, My Name is</span>
-                        <h1 class="home__name">Meriam Selim</h1>
-                        <span class="home__professional">Web Developer</span>
-                        <a download=" " href="pdf/cv.pdf" class="button button-light home__button">Download Cv</a>
+                        <h1 class="home__name">May Clean S</h1>
+                        
+                        <div class="container">
+                            <h1 class="home__professional">I'm <span id="autyped"></span></h1>
+                            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                            <script>
+                                var typed = new Typed('#autyped', {
+                                    strings: ["Web Developer", "Designer", "Hardcore Gamer"],
+                                    typeSpeed: 120,
+                                    backSpeed: 120,
+                                    loop: true,
+                                    });
+                            </script>
+
+                        </div>
+                        
+                        <a download=" " href="docs/cvs.jpg" class="button button-light home__button">Here's my CV</a>
                     </div>
            
                     <div class="home__social">
@@ -79,9 +93,9 @@
                         
                     </div>
 
-                    <div class="home__img" >
-                        <img src="https://images.unsplash.com/photo-1541710887094-e940650f6c42?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80" alt="" class="">
-                    </div>
+                    <!-- <div class="home__img" >
+                    <img src="{{URL('/images/gwe1.jpg')}}">
+                    </div> -->
 
                    
                 </div>
@@ -95,23 +109,23 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about__container bd-grid">
                         <div class="about__data bd-grid">
-                            <p class="about__desc"><span>Hello, I am <br> </span>Freelance Front-End Developer, I am passionate about craeting and developing web interfaces. With years of experience in web design and development.</p>
+                            <p class="about__desc"><span>Hello, I am <br> </span>software engineering student with a background in network engineering, I'm excited enough to explore programming.</p>
                             <div>
                                 <span class="about__number">1.5</span>
                                 <span class="about__ach">Years of Experience</span>
                             </div>
                             <div>
-                                <span class="about__number">15+</span>
+                                <span class="about__number">2</span>
                                 <span class="about__ach">Completed Projects</span>
                             </div>
                             <div>
                                 <span class="about__number">1</span>
-                                <span class="about__ach">Best Work Award</span>
+                                <span class="about__ach">Competition Award</span>
                             </div>
                         
                         </div>
 
-                        <img src="https://images.unsplash.com/photo-1486074051793-e41332bf18fc?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60" alt="" class="about__img">
+                        <img src="{{URL('/images/gweh1.jpg')}}">
                 </div>
             </section>
 
@@ -129,15 +143,15 @@
 
                         <div class="bd-grid">
                             <div class="quali__data">
-                                <h3 class="quali__area">Junior Front End Developer </h3>
+                                <h3 class="quali__area">Fiber Optics Technician </h3>
                                 <div class="quali__box">
                                     <span class="quali__work">
                                         <i class='bx bx-briefcase-alt quali__icon' ></i>
-                                        FreeLancing
+                                        Internship
                                     </span>
                                     <span class="quali__work">
                                         <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        May 2020 - Jan 2021
+                                        May 2021 -  2021
                                     </span>
                                     
                                 </div>
@@ -145,15 +159,15 @@
                             
                             
                             <div class="quali__data">
-                                <h3 class="quali__area">Customer Service Representitive</h3>
+                                <h3 class="quali__area">Soon</h3>
                                 <div class="quali__box">
                                     <span class="quali__work">
                                         <i class='bx bx-briefcase-alt quali__icon' ></i>
-                                        Abc Hospital
+                                        Soon
                                     </span>
                                     <span class="quali__work">
                                         <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        Jan 2017 - Dec 2019
+                                        Soon
                                     </span>
                                     
                                 </div>
@@ -172,30 +186,30 @@
 
                         <div class="bd-grid">
                             <div class="quali__data">
-                                <h3 class="quali__area">Web Designing & Front-End Course</h3>
+                                <h3 class="quali__area">Komputer dan Jaringan</h3>
                                 <div class="quali__box">
                                     <span class="quali__work">
                                         <i class='bx bxs-book quali__icon' ></i>
-                                        online Learning
+                                        SMK Negeri 2 Yogyakarta
                                     </span>
                                     <span class="quali__work">
                                         <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        Jun 2019 - Apr 2020
+                                        2019 - 2022
                                     </span>
                                     
                                 </div>
                             </div>
 
                             <div class="quali__data">
-                                <h3 class="quali__area">Computer and Communication Engineering </h3>
+                                <h3 class="quali__area">Software Engineering </h3>
                                 <div class="quali__box">
                                     <span class="quali__work">
                                         <i class='bx bxs-book quali__icon' ></i>
-                                        Helwan University - Faculty of Engineering
+                                        Universitas Gadjah Mada
                                     </span>
                                     <span class="quali__work">
                                         <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        Sep 2010 - Jan 2016
+                                        2022 - Now
                                     </span>
                                     
                                 </div>
@@ -393,8 +407,8 @@
         <!--===== FOOTER =====-->
         <footer class="footer">
             <div class="footer__container bd-container">
-                <h1 class="footer__title">Meriam Selim</h1>
-                <p class="footer__desc">I'm Meriam Selim and this is my personal website, consult me here.</p>
+                <h1 class="footer__title">May's Portfolio</h1>
+                <p class="footer__desc">I'm May Clean Sitepu and this is my personal website, consult me here.</p>
 
                 <div class="footer__social">
                     <a href="#" class="footer__link"><i class='bx bxl-linkedin' ></i></a>
@@ -403,7 +417,7 @@
                     <a href="#" class="footer__link"><i class='bx bxl-codepen' ></i></a>
                     <a href="#" class="footer__link"><i class="fas fa-bolt"></i></a>
                 </div>
-                <p class="footer__copy">&#169; 2021 Meriam Selim. All rights reserved</p>
+                <p class="footer__copy">&#169; 2023 May Clean Sitepu. All rights reserved</p>
             </div>
         </footer>
         
@@ -421,7 +435,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
         
         <!--===== MAIN JS =====-->
-        <script src="js/content.js"></script>
+        <script src="js/script.js"></script>
          
           
           <!--===== FreeCodeCamp.org Test =====-->
