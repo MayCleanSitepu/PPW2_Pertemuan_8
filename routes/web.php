@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\loginregis;
+
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginRegister;
+use App\Http\Controllers\cv;
+use App\Http\Controllers\loginregis;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::controller(loginregis::class)->group(function() {
     Route::get('/register', 'register')->name('register');
     Route::post('/store', 'store')->name('store');
@@ -26,5 +28,8 @@ Route::controller(loginregis::class)->group(function() {
     Route::post('/authenticate', 'authenticate')->name('authenticate');
     Route::get('/dashboard', 'dashboard')->name('dashboard');
     Route::post('/logout', 'logout')->name('logout');
-   });
-   
+});
+
+Route::get('/cv', [cv::class,'index']);
+
+ 
